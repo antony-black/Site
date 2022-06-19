@@ -1,0 +1,157 @@
+.footer {
+  padding: 70px 0 50px;
+  background: url('../img/footer/footer__bg.png') center/cover no-repeat;
+
+  &__inner {
+    display: flex;
+    gap: 90px;
+
+    & + *{
+      margin-top: 150px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.38;
+
+    & + *{
+      margin-top: 60px;
+    }
+  }
+
+  &__contacts {
+    flex: 0 0 600px;
+    color: $color-3;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-item +  &__social-item{
+    margin-left: 20px;
+  }
+
+  &__descr-link {
+    font-size: 14px;
+    line-height: 1.14;
+    color: $color-3;
+    position: relative;
+
+    &:hover::before{
+      content: '';
+      width: 221px;
+      height: 1px;
+      background: $color-3;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.form {
+  flex: 0 0 510px;
+  color: $color-3;
+
+  &__input {
+    width: 100%;
+    padding: 11px 0;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $color-3;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.36;
+    color: $color-3;
+
+    & + &{
+      margin-top: 50px;
+    }
+
+    &::placeholder{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.36;
+      color: $color-3;
+    }
+  }
+
+  &__button-box {
+    margin-top: 60px;
+
+    & span{
+      margin-left: -45px;
+    }
+}
+}
+
+.box-contacts {
+
+  & > *{
+    margin-top: 60px;
+  }
+
+  &__tel {
+    display: flex;
+    flex-direction: column;
+
+    & a:hover{
+      text-decoration: underline;
+    }
+  }
+}
+// ========================
+@media (max-width: 890px) {
+  .footer__inner{
+    flex-direction: column;
+    gap: 50px;
+
+    & + *{
+      margin-top: 50px;
+    }
+  }
+  .form{
+    flex: 1 1 100%;
+
+    &__input{
+      width: 50%;
+    }
+  }
+  .footer__contacts{
+    flex:  1 1 100%;
+    text-align: center;
+  }
+  .box-contacts {
+
+    & > *{
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 767.98px){
+  .footer__items{
+    flex-direction: column;
+
+    & > *{
+      margin-top: 50px;
+    }
+  }
+}
+@media (max-width: 479.98px){
+  .form__input{
+    width: 100%;
+  }
+}
+
+
+

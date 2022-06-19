@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:regular,700');
+@import '_variables';
+@import '_header';
+@import '_services';
+@import '_info';
+@import '_quote';
+@import '_clients';
+@import '_step';
+@import '_footer';
+
+
+
+
+
+
+
+// ==============================
+body{
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  color: $color-2;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+ flex: 1 1 auto; 
+}
+
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.38;
+  text-transform: uppercase;
+  color: $color-4;
+
+  & + *{
+    margin-top: 60px;
+  }
+}
+// ======================
+@media (max-width: 991.98px){
+  .title + *{
+    margin-top: 30px;
+  }
+}
+// ======================
+.path-bg{
+  transition: all .3s;
+}
+.path-bg:hover{
+  fill: $color-1;
+}
+// ======================

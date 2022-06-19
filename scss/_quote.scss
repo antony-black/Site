@@ -1,0 +1,41 @@
+.blockquote {
+  margin-bottom: 150px;
+  background: url('../img/quote/quote__img.png') center/cover no-repeat;
+  min-height: 500px;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+
+  & p{
+    max-width: 673px;
+    margin: 0 auto;
+    text-align: center;
+    color: $color-3;
+    font-size: 42px;
+  }
+}
+// =========================
+@media (max-width: 991.98px) {
+  .blockquote{
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 650px){
+  .blockquote{
+    padding: 30px;
+    min-height: 300px;
+  }
+  .blockquote p{
+    font-size: 26px;
+  }
+}
+@media (max-width: 650px){
+  .blockquote{
+    padding: 30px;
+    min-height: 300px;
+  }
+  .blockquote p{
+    font-size: 20px;
+  }
+}
+
